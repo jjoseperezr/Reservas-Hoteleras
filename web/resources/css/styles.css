@@ -1,0 +1,59 @@
+body {
+    background-color: #EFEFEF;
+}
+
+.img-size{
+    width: 250px;
+    height: 200px;
+} 
+
+.btn-custom {
+    width: 200px !important;
+    display: inline-block;
+}
+
+.col-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph{
+    margin-top: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+            
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+   background-color: #ffffd1
+}
+            
+th {
+ color: white;
+ background-color: blue;
+}
+            
+p.p1 {
+ background-color: blue;
+ left: 150px;
+ right: 150px;
+}
+            
+p.p2 {
+  background-color: blue;
+  height: 30px;
+  left: 50px;
+  top: -10px;
+  width: 350px;
+}
+

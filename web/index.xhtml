@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+
+        <h:outputStylesheet name="/css/bootstrap.min.css" />
+        <h:outputStylesheet name="/css/styles.css" />
+
+    </h:head>
+    <h:body>
+
+
+
+        <h:form>      
+
+            <h1 class="text-center">Sistema de Reserva Hotelera</h1>
+
+            <div class="row">
+
+                <div class="col-md-6 my-2 text-center col-flex">
+
+                    <h3>Registrarse</h3>
+
+                    <img src="resources/img/registro-img.jpg" class="img-thumbnail img-size" />
+
+                    <p class="paragraph">Registrate y reserva una <br/>habitación a tu gusto y .</p>
+
+                    <h:commandButton action="CrearCliente.xhtml" value="Registrarse" 
+                                     class="btn btn-primary btn-custom text-center">
+                    </h:commandButton>
+                </div>
+
+                <div class="col-md-6 my-2 text-center col-flex">
+
+                    <h3>Iniciar Sesión</h3>
+
+
+                    <img src="resources/img/sesion-img.jpg" class="img-thumbnail img-size"/>
+
+                    <p class="paragraph">Inicia sesión para tener acceso <br/>a tus configuraciones.</p>
+
+                    <h:commandButton action="InicioSesion.xhtml" value="Iniciar sesión" 
+                                     class="btn btn-success btn-custom">
+                    </h:commandButton>
+                </div>
+
+            </div>
+        </h:form> 
+
+    </h:body>
+
+</html>

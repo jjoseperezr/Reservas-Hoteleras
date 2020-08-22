@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+
+        <h:outputStylesheet name="/css/bootstrap.min.css" />
+        <h:outputStylesheet name="/css/styles.css" />
+
+    </h:head>
+
+    <h:body >
+
+        <h:form>
+            <h3 class="text-center ">Administración: Clientes y Habitaciones</h3>
+
+            <br/>
+
+            <div class="row text-center">
+
+                <div class="col-md-3">
+                    <h:commandButton action="/ListadoClientes.xhtml?faces-redirect=true" value="Lista de clientes" class="btn btn-warning"></h:commandButton>
+                </div>
+                <div class="col-md-2">
+                    <h:commandButton action="/ListadoHabitaciones.xhtml" value="Listar habitaciones" class="btn btn-primary"></h:commandButton>
+                </div>
+                <div class="col-md-2">
+                    <h:commandButton action="/CrearHabitacion.xhtml" value="Crear Habitacion" class="btn btn-success"></h:commandButton>
+                </div>
+                <div class="col-md-2">
+                    <h:commandButton action="/HabitacionesReservadas.xhtml" value="Listar habitaciones Reservadas" class="btn btn-info"></h:commandButton>
+                </div>
+                <div class="col-md-3"> 
+                    <h:commandButton action="index.xhtml" value="Regresar" immediate="true" class="btn btn-danger"></h:commandButton>
+                </div>
+
+            </div>
+
+        </h:form>
+
+    </h:body>
+
+</html>

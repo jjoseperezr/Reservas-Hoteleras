@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Creación de habitaciones</title>
+
+        <h:outputStylesheet name="/css/bootstrap.min.css" />
+        <h:outputStylesheet name="/css/styles.css" />
+    </h:head>
+
+    <h:body>
+
+        <h:form id="form" class="form-horizontal">
+            <div class="form-group">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <h2 style="text-align: center">Proporcione los siguientes detalles</h2>
+                </div>
+            </div>
+            <hr/>
+            <div class="form-group">
+                <h:outputLabel for="codigo" class="control-label col-sm-4">Codigo de la habitacion</h:outputLabel>
+                <div class="col-sm-4">
+                    <h:inputText id="cod-id" value="#{user.cod}" class="form-control" validatorMessage="Codigo Requerido">
+                        <f:validateRequired />
+                    </h:inputText>
+                </div>
+            </div>
+            <div class="form-group">
+                <h:outputLabel for="username" class="control-label col-sm-4">Nombre de la habitacion</h:outputLabel>
+                <div class="col-sm-4">
+                    <h:inputText id="name-id" value="#{user.name}" class="form-control" validatorMessage="Nombre de usuario es requerido">
+                        <f:validateRequired />
+                    </h:inputText>
+                </div>
+            </div>
+            <div class="form-group">
+                <h:outputLabel for="habitacion" class="control-label col-sm-4">Detalle de la habitacion</h:outputLabel>
+                <div class="col-sm-4">
+                    <h:inputText id="descripcion-id" value="#{user.address}" class="form-control" validatorMessage="Nombre de usuario es requerido">
+                        <f:validateRequired />
+                    </h:inputText>
+                </div>
+            </div>
+            <div class="form-group">
+                <h:outputLabel for="cantidad" class="control-label col-sm-4">Cantidad de personas</h:outputLabel>
+                <div class="col-sm-4">
+                    <h:inputText id="cantidadpersonas-id" value="#{user.cant}" class="form-control" validatorMessage="Ingresa cantidad de personas validas">
+                        <f:validateLongRange minimum="1" />
+                        <f:validateRequired />
+                    </h:inputText>
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group">
+                <h:outputLabel for="cantidad" class="control-label col-sm-4">Precio Habitacion</h:outputLabel>
+                <div class="col-sm-4">
+                    <h:inputText id="precio-id" value="#{user.precio}" class="form-control" validatorMessage="Ingrese un precio valido">
+                        <f:validateLongRange minimum="1" />
+                        <f:validateRequired />
+                    </h:inputText>
+                </div>
+            </div>           
+
+
+            <div class="form-group">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="col-sm-2">
+                        <h:commandButton value="Registrar" action="#{user.crearhabitacion()}" class="btn btn-primary" style="width: 80px;"></h:commandButton>
+                    </div>
+                    <div class="col-sm-1">
+                    </div>
+                    <div class="col-sm-2">
+                        <center>
+                            <h:commandButton action="Admin.xhtml?faces-redirect=true" immediate="true" value="Regresar" class="btn btn-success"></h:commandButton>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </h:form>
+    </h:body>
+
+</html>
